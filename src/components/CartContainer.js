@@ -6,7 +6,7 @@ const CartContainer = () => {
 
 const dispatch = useDispatch();
 
-  if (cartItems.length === 0) {
+  if (amount < 1) {
     return (
       <div className="empty-cart">
         <header>
