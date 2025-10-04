@@ -12,10 +12,10 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateTotals());
-  }, [cartItems]);
+  }, [cartItems,dispatch]);
   useEffect(() => {
     dispatch(getCartItems('random'));
-  }, []);
+  }, [dispatch]);
   if (isLoading) {
     return (
       <div className="loading">
